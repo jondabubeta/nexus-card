@@ -70,11 +70,13 @@ This repo is configured to deploy to GitHub Pages at:
 
 - `https://jondabubeta.github.io/nexus-card`
 
-Use:
+Automatic deployment is configured with GitHub Actions in:
 
-### `npm run deploy`
+- `.github/workflows/deploy-pages.yml`
 
-Builds the app and publishes the `build` folder to the `gh-pages` branch.
+It deploys on every push to `main` (and can also be run manually from the Actions tab).
+
+In GitHub, set **Settings > Pages > Source** to **GitHub Actions**.
 
 ### `npm run build` fails to minify
 
