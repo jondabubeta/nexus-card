@@ -16,8 +16,7 @@ You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+There are currently no test files in this repo.
 
 ### `npm run build`
 
@@ -64,6 +63,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+## GitHub Pages
+
+This repo is configured to deploy to GitHub Pages at:
+
+- `https://jondabubeta.github.io/nexus-card`
+
+Use:
+
+### `npm run deploy`
+
+Builds the app and publishes the `build` folder to the `gh-pages` branch.
 
 ### `npm run build` fails to minify
 
