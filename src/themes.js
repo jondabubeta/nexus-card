@@ -1,3 +1,16 @@
+const ASSET_BASE = process.env.PUBLIC_URL || '';
+
+const withAssetBase = (path) => `${ASSET_BASE}${path}`;
+
+const buildThemeAssets = (theme) => ({
+  ...theme,
+  cardImages: theme.cardImages.map((card) => ({
+    ...card,
+    src: withAssetBase(card.src)
+  })),
+  cardBack: withAssetBase(theme.cardBack)
+});
+
 export const themes = {
   blizz: {
     name: 'Blizzard',
@@ -86,3 +99,6 @@ export const themes = {
     }
   }
 };
+
+themes.blizz = buildThemeAssets(themes.blizz);
+themes.lol = buildThemeAssets(themes.lol);
